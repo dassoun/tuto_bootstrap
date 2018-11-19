@@ -7,18 +7,47 @@
     <style type="text/css">
       body { background-color:#DDD; }
       [class*="col"] { margin-bottom: 20px; }
+      .form-inline { margin-top: 20px}
       img { width: 100%; }
       .well {
         background-color:#CCC;
         padding: 20px;
+      }
+      .inline-form input {
+        display: inline-block;
+        width: 100px;
       }
     </style>
   </head>
 
   <body>
     <div class="container">
-      <header class="page-header">
-        <h1>Mon amour pour les tigres</h1>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class="active"> <a href="#">Accueil</a> </li>
+            <li> <a href="#">Liens</a> </li>
+            <li> <a href="#">Témoignages</a> </li>
+            <li> <a href="#">Références</a> </li>
+          </ul>
+          <form class="navbar-form navbar-right inline-form">
+            <div class="form-group">
+              <input type="search" class="input-sm form-control" placeholder="Recherche">
+              <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <header class="row">
+        <div class="col-sm-12 col-lg-7">
+          <h1>Mon amour pour les tigres</h1>
+        </div>
+        <div class="col-sm-12 col-lg-5">
+          <form class="form-inline pull-right">
+            <input type="text" style="width:150px" class="input-sm form-control" placeholder="Recherche">
+            <button type="submit" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
+          </form>
+        </div>
       </header>
       <section class="row">
         <div class="col-lg-12">
@@ -34,18 +63,18 @@
         </div>
       </section>
       <section class="row">
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t1.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t2.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t3.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t4.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t5.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t6.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t7.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t8.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t9.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t10.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t11.jpg" alt="Tigre"></div>
-        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t12.jpg" alt="Tigre"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t1.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t2.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t3.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t4.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t5.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t6.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t7.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t8.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t9.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t10.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t11.jpg" alt="Tigre" class="img-rounded"></div>
+        <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t12.jpg" alt="Tigre" class="img-rounded"></div>
       </section>
       <div class="row">
         <section class="col-sm-4">
@@ -64,7 +93,7 @@
           </ul>
         </section>
         <section class="col-sm-8">
-          <img src="images/photo-tigre.jpg" alt="Tigre">
+          <img src="images/photo-tigre.jpg" alt="Tigre" class="img-rounded">
         </section>
       </div>
       <div class="row">
@@ -141,7 +170,7 @@
               <label for="textarea">Votre message :</label>
                 <textarea id="textarea" class="form-control" rows="4"></textarea>
                 <p class="help-block">Vous pouvez agrandir la fenêtre</p>
-              <button class="btn btn-primary" type="submit">Envoyer</button>
+                <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-ok-sign"></span> Envoyer</button>
             </fieldset>
           </form>
         </section>
